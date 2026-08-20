@@ -91,7 +91,7 @@ jobs:
       with:
         context: ./backend/
         push: true
-        tags: username/taski_backend:latest   # <--- ЗАМЕНИТЕ username
+        tags: vitaminsp/taski_backend:latest
 
   # ==================== СБОРКА И ПУШ ФРОНТЕНДА ====================
   build_frontend_and_push_to_docker_hub:
@@ -116,7 +116,7 @@ jobs:
       with:
         context: ./frontend/
         push: true
-        tags: username/taski_frontend:latest   # <--- ЗАМЕНИТЕ username
+        tags: vitaminsp/taski_frontend:latest
 
   # ==================== СБОРКА И ПУШ GATEWAY (NGINX) ====================
   build_gateway_and_push_to_docker_hub:
@@ -140,7 +140,7 @@ jobs:
       with:
         context: ./gateway/
         push: true
-        tags: username/taski_gateway:latest   # <--- ЗАМЕНИТЕ username
+        tags: vitaminsp/taski_gateway:latest
 
   # ==================== ДЕПЛОЙ НА СЕРВЕР ====================
   deploy:
